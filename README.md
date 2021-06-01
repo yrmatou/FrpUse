@@ -31,11 +31,12 @@ vhost_http_port = 10080 # 用于服务端主机访问的端口，需要再vps安
 ```json
 [common]
 server_addr = xx.xx.xx.xx # 使用的是公网机器IP。
-server_port = 7000 # 服务端设置的端口可修改自己的
+server_port = 7000 # 服务端设置的端口 可修改自己的
+token = 12345678 # 必须和远程服务器一致
 
 [web]
 type = http # 为代理的类型，web服务设置为http类型
-local_port = 9003 # 为本地客户端启动的web服务
+local_port = 9003 # 为本地客户端启动的web服务 修改成自己的
 custom_domains = xx.xx.xx # 为外网VPS绑定的访问域名或者机器的IP，比如 www.q.xyz
 ```
 * 配置好启动 ./frpc -c frpc.ini 或者 nohup ./frpc -c frpc.ini &（后台运行）  
