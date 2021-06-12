@@ -20,9 +20,10 @@
 * vim frps.ini
 ```json
 [common]
-bind_port = 6000 # 表示客户端和服务端连接的端口，默认是6000，也可以修改，只要跟客户端的bind_port保持一致就可以
+bind_port = 6000 # 表示客户端和服务端连接的端口，可以修改成自己设定的，只要跟客户端的bind_port保持一致就可以
 token = 12345678 # 跟客户端设置的token保持一致即可
-vhost_http_port = 10080 # 用于服务端主机访问的端口，需要再vps安全组里添加此端口才行。或者这里使用nginx内部转发到此端口就可
+vhost_http_port = 8080 # 用于服务端主机访问的端口，需要再vps安全组里添加此端口才行。或者这里使用80端口nginx内部转发到8080也可
+使用nginx代理80端口到8080好处就是访问的时候这样就可：https://www.q.xyz/wechat/v1/token，不然https://www.q.xyz:8080/wechat/v1/token
 ```
 * 配置好启动 ./frps -c frps.ini 或者 nohup ./frps -c frps.ini &（后台运行）  
 **客户端设置（我的是window系统）**
@@ -40,7 +41,7 @@ local_port = 3000 # 为本地客户端启动的web服务 修改成自己的
 custom_domains = xx.xx.xx # 为外网VPS绑定的访问域名或者机器的IP，比如 www.q.xyz
 ```
 * 配置好启动 ./frpc -c frpc.ini 或者 nohup ./frpc -c frpc.ini &（后台运行）  
-使用外网IP或者域名:vhost_http_port，即custom_domains:10080，访问自己内网启动的web服务了
+使用外网IP或者域名:vhost_http_port，即custom_domains:8080，访问自己内网启动的web服务了
 
 ### 开放服务器安全组的指定端口，用的是nginx代理80端口转发访问
 ![image](https://user-images.githubusercontent.com/21699695/121775208-c8e7fd80-cbb8-11eb-9441-161f841645c6.png)
