@@ -53,6 +53,11 @@ custom_domains = xx.xx.xx # 为外网VPS绑定的访问域名或者机器的IP�
 ### 总结心得
 ![image](https://user-images.githubusercontent.com/21699695/121776408-4d3d7f00-cbbf-11eb-9d94-f5c6242c6bd0.png)  
 
+**辛苦！辛苦！喝口水！哈哈哈**
+<div align="left">
+  <img src="https://user-images.githubusercontent.com/21699695/121778277-d6a57f00-cbc8-11eb-9b28-13462b3fde2f.png" alt="Editor" width="200">
+</div>
+
 学习交流 加wx联系  
 ![image](https://user-images.githubusercontent.com/21699695/121776523-ee2c3a00-cbbf-11eb-8464-db2ff4d97f44.png)
 
