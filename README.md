@@ -42,6 +42,8 @@ custom_domains = xx.xx.xx # 为外网VPS绑定的访问域名或者机器的IP�
 * 配置好启动 ./frpc -c frpc.ini 或者 nohup ./frpc -c frpc.ini &（后台运行）  
 使用外网IP或者域名:vhost_http_port，即custom_domains:10080，访问自己内网启动的web服务了
 
-### 我这里开发没有用开放服务器安全组的方式，我用的是nginx代理端口访问
+### 开放服务器安全组的指定端口，用的是nginx代理80端口转发访问
+![image](https://user-images.githubusercontent.com/21699695/121775208-c8e7fd80-cbb8-11eb-9441-161f841645c6.png)
+
 ![image](https://user-images.githubusercontent.com/21699695/120308882-2a7db180-c307-11eb-9dc3-0104a99b829e.png)  
 直接 https://www.q.xyz/wechat/v1/token 这样即可访问到本地指定的端口服务
