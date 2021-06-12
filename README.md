@@ -48,4 +48,5 @@ custom_domains = xx.xx.xx # 为外网VPS绑定的访问域名或者机器的IP�
 
 ![image](https://user-images.githubusercontent.com/21699695/120308882-2a7db180-c307-11eb-9dc3-0104a99b829e.png)  
 直接 https://www.q.xyz/wechat/v1/token 这样即可访问到本地指定的端口服务  
-**微信校验服务地址的时候必须是80端口或者443端口**
+
+**微信校验服务地址的时候必须是80端口或者443端口所以必须使用nginx转发**
