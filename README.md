@@ -51,5 +51,9 @@ custom_domains = xx.xx.xx # 为外网VPS绑定的访问域名或者机器的IP�
 
 **微信校验服务地址的时候必须是80端口或者443端口所以必须使用nginx转发**  
 ### 总结心得
-![image](https://user-images.githubusercontent.com/21699695/121776408-4d3d7f00-cbbf-11eb-9d94-f5c6242c6bd0.png)
+![image](https://user-images.githubusercontent.com/21699695/121776408-4d3d7f00-cbbf-11eb-9d94-f5c6242c6bd0.png)  
+
+学习交流 加wx联系  
+![Uploading image.png…]()
+
 
